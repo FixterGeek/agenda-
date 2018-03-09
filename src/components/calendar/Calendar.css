@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
+
+@font-face {
+    font-family: "AveneirUltraLight";
+    src: url('./AvenirNext-UltraLight.otf');
+}
+
+@font-face {
+    font-family: "AvenirLight";
+    src: url('./Avenir Light.otf');
+}
+
 body {
     margin-top: 40px;
     text-align: center;
@@ -15,7 +26,7 @@ h1 {
 }
 
 h4{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'AvenirLight', sans-serif;
 }
 
 #app {
@@ -25,20 +36,21 @@ h4{
 
 #external-events {
     position: absolute;
-    width: 27.7em;
+    width: 27.5em;
     padding: 0 10px;
     background: #F5F7FA;
     text-align: center;
     height: 51.7em;
     display: flex;
     flex-direction: column;
+    font-family: 'AvenirLight', sans-serif;
 }
 
 #external-events h4 {
     font-size: 16px;
     margin-top: 0;
     padding-top: 1em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'AvenirLight', sans-serif;
 }
 
 
@@ -77,6 +89,12 @@ h4{
      margin-left: 1em;
  }
 
+ .fc{
+     font-family: "AvenirLight", sans-serif;
+     text-transform: capitalize;
+ }
+
+
 .fc-state-highlight {
     opacity: 0;
     border: none;
@@ -90,17 +108,20 @@ h4{
     opacity: .65;
     left: 5% !important;
     right: 5% !important;
+
 }
 
 /* Bolds the name of the event and inherits the font size */
 .fc-event {
     font-size: inherit !important;
-    font-weight: bold !important;
+    font-family: 'AvenirLight', sans-serif;
+
+
 }
 
 /* Remove the header border from Schedule */
 .fc td, .fc th {
-    border-style: none !important;
+    border-color: rgba(201, 201, 201, 0.18);;
     border-width: 1px !important;
     padding: 0 !important;
     vertical-align: top !important;
@@ -111,6 +132,8 @@ h4{
     z-index: 1 !important;
     background: inherit !important;
     opacity: .25 !important;
+    background-color: #222222;
+
 }
 
 /* Normal font weight for the time in each event */
